@@ -27,4 +27,3 @@ module.exports = {
 };
 
 //interaction.channel.send({embeds:[embed]});
-//

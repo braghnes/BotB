@@ -8,5 +8,3 @@ module.exports = {
 		await interaction.reply(`Hei! Kordan går det ${interaction.user.tag}?`);
 	},
 };
-
-//

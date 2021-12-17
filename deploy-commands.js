@@ -18,7 +18,6 @@ rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
 	.catch(console.error);
 
 
-//
 
 
 
