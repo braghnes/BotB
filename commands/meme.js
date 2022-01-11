@@ -10,7 +10,7 @@ module.exports = {
 	async execute(interaction) {
         // In this array, 
         // you can put the subreddits you want to grab memes from
-        const subReddits = ["dankmeme", "meme", "me_irl", "memes", "MemeEconomy", "ComedyCemetery"];
+        const subReddits = ["dankmeme", "danksmemes", "meme", "me_irl", "memes", "MemeEconomy", "ComedyCemetery", "terriblefacebookmemes", "PewdiepieSubmissions", "funny", "PrequelMemes"];
         // Grab a random property from the array
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
         // A message from BraSUI!
