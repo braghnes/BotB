@@ -10,7 +10,7 @@ module.exports = {
 	async execute(interaction) {
         // In this array, 
         // you can put the subreddits you want to grab memes from
-        const subReddits = ["dankmeme", "danksmemes", "meme", "me_irl", "memes", "MemeEconomy", "ComedyCemetery", "terriblefacebookmemes", "PewdiepieSubmissions", "funny", "PrequelMemes"];
+        const subReddits = ["funny", "dankmemes", "dankmeme", "meme", "me_irl", "memes", "MemeEconomy", "ComedyCemetery", "PewdiepieSubmissions"];
         // Grab a random property from the array
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
         // A message from BraSUI!
@@ -30,3 +30,4 @@ module.exports = {
 };
 
 //interaction.channel.send({embeds:[embed]});
+//["terriblefacebookmemes", "PrequelMemes"];
