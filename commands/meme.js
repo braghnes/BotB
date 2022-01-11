@@ -13,13 +13,16 @@ module.exports = {
         const subReddits = ["dankmeme", "meme", "me_irl", "memes", "MemeEconomy", "ComedyCemetery"];
         // Grab a random property from the array
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
+        // A message from BraSUI!
+        const interact = ["Look at this meme!", "This one is funny af!", "LMAO!", "Sheeeeeee!", "SUUUUIIII!", "Have you seen this one?", "LOL!", "Damn!"]
+        const randomint = interact[Math.floor(Math.random() * interact.length)];
 
         // Get a random image from the subreddit page
         const img = await randomPuppy(random);
         const embed = new MessageEmbed()
             .setColor("RANDOM")
             .setImage(img)
-            .setTitle(`From /r/${random}, via BraSUI`)
+            .setTitle(`${randomint} I got it from /r/${random}`)
             .setURL(`https://reddit.com/r/${random}`);
 
         interaction.reply({embeds:[embed]});
