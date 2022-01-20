@@ -1,3 +1,4 @@
+//importerer slashcommandbuilder for discord
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {

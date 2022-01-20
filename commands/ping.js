@@ -1,3 +1,4 @@
+//importerer slashcommandbuilder for discord
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
@@ -5,8 +6,7 @@ module.exports = {
 		.setName('ping')
 		.setDescription('Replies with Pong!'),
 	async execute(interaction) {
-		await interaction.reply('Pong!');
+		await interaction.reply({ content: 'Pong!', ephemeral: true});
+		await interaction.followUp({ content: 'Pong again!', ephemeral: true });
 	},
 };
-
-//test
