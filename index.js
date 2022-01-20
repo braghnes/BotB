@@ -18,7 +18,7 @@ for (const file of eventFiles) {
 	}
 }
 
-//Hent inn kommandoer og lagre dem i client
+//Henter inn kommandoer og lagrer dem i client
 client.commands = new Collection();
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
